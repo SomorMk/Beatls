@@ -1,0 +1,864 @@
+@font-face {
+    font-family: 'MYRIADPRO-REGULAR';
+    src: url(../myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clr {
+    clear: both;
+}
+
+/* =========================================
+              Common CSS end
+===========================================*/
+
+
+/* =========================================
+              Header part start
+===========================================*/
+#header {
+    height: 32px;
+    background: #0872b9;
+}
+
+.header_text {
+    width: 50%;
+    float: left;
+}
+
+.header_icon {
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+.header_text p {
+    color: #e7e7e7;
+    font-size: 14px;
+    font-family: 'MYRIADPRO-REGULAR';
+    line-height: 32px;
+}
+
+.header_icon a {
+    color: #e7e7e7;
+    font-size: 14px;
+    margin-left: 24px;
+    line-height: 32px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.header_icon a:hover {
+    color: #353535;
+}
+
+/* =========================================
+              Header part end
+===========================================*/
+
+/* =========================================
+              Menu CSS end
+===========================================*/
+#menu {
+    height: 80px;
+}
+
+.logo {
+    width: 15%;
+    float: left;
+    line-height: 80px;
+    font-size: 14px;
+}
+
+.main_menu {
+    width: 85%;
+    float: left;
+}
+
+.main_menu ul {
+    float: right;
+}
+
+.main_menu ul li a {
+    color: #353535;
+    text-transform: capitalize;
+    line-height: 80px;
+    margin-left: 15px;
+    font-family: 'MYRIADPRO-REGULAR';
+    font-size: 14px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.main_menu ul li a:hover {
+    color: #0872b9;
+}
+
+.menu_fix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/* =========================================
+              Menu CSS end
+===========================================*/
+
+/* =========================================
+              Banner CSS Start
+===========================================*/
+#banner {
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 76px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#banner:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.banner_text {
+    width: 450px;
+    float: right;
+    text-align: right;
+}
+
+.banner_text h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.banner_text h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.banner_text p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 24px;
+}
+
+.banner_text a {
+    border: 1px solid white;
+    padding: 9px 16px;
+    margin-left: 20px;
+    margin-top: 27px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    margin-left: 11px;
+    text-transform: uppercase;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.banner_text a:hover {
+    background: #0872b9;
+    border: 1px solid #0872b9;
+}
+
+/* =========================================
+              Banner CSS end
+===========================================*/
+
+/* =========================================
+              About CSS end
+===========================================*/
+#about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.common_heading {
+    position: relative;
+    display: inline-block;
+}
+
+.common_heading h2 {
+    text-transform: uppercase;
+    color: #353535;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+
+.common_heading img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.about_img {
+    width: 390px;
+    float: left;
+}
+
+.about_img img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.about_text {
+    width: 570px;
+    float: left;
+}
+
+.about_text p {
+    color: #555555;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    text-align: left;
+    padding-top: 34px;
+    padding-left: 20px;
+}
+
+.about_text p span {
+    display: block;
+    margin-top: 23px;
+}
+
+.about_row {
+    margin-top: 40px;
+}
+
+/* =========================================
+              About CSS end
+===========================================*/
+
+/* =========================================
+              Service CSS end
+===========================================*/
+#services {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.service_col {
+    width: 31.94%;
+    padding: 50px 20px 20px;
+    background: #f1f1f1;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.service_col h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+.service_col p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #555555;
+}
+
+.service_logo {
+    width: 69px;
+    height: 69px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    line-height: 69px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: -35px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.service_logo:after {
+    position: absolute;
+    content: '';
+    border: 1px solid #f1f1f1;
+    width: 69px;
+    height: 69px;
+    left: -3px;
+    top: -3px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.service_logo:before {
+    position: absolute;
+    content: '';
+    border: 4px solid #fff;
+    width: 69px;
+    height: 69px;
+    left: -6px;
+    top: -6px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.service_col:nth-child(3) {
+    margin-right: 0;
+}
+
+.service_row {
+    padding-top: 68px;
+}
+
+.service_col:hover .service_logo {
+    background: #5bc5f4;
+}
+
+.service_col:hover .service_logo:after {
+    border-color: #5bc5f4;
+}
+
+.service_col:hover {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================
+              Service CSS end
+===========================================*/
+
+/* =========================================
+              Portfolio CSS start
+===========================================*/
+#portfolio {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.port_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.port_img img {
+    width: 100%;
+    max-width: 100%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.port_row {
+    padding-top: 60px;
+}
+
+.port_col {
+    width: 23.4%;
+    float: left;
+    margin-right: 20px;
+}
+
+.port_margin {
+    margin-bottom: 20px;
+}
+
+.port_col:nth-child(4) {
+    margin-right: 0;
+}
+
+.port_img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+.port_img .overlay i {
+    width: 40px;
+    height: 40px;
+    background: #5bc5f4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    line-height: 40px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.port_img:hover .overlay {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform-origin: center;
+}
+
+.port_img:hover img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+/* =========================================
+              Portfolio CSS end
+===========================================*/
+
+/* =========================================
+              Team CSS end
+===========================================*/
+#team {
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.team_row {
+    margin-top: 50px;
+}
+
+.team_img img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.team_col {
+    width: 23.4%;
+    margin-right: 20px;
+    float: left;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.team_col:nth-child(4) {
+    margin-right: 0;
+}
+
+.team_text h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #353535;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    margin-top: 5px;
+}
+
+.team_text h5 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #555555;
+}
+
+.team_img {
+    position: relative;
+}
+
+.team_img .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    opacity: 0;
+}
+
+.team_img:hover .overlay{
+    width: 80px;
+    opacity: 1;
+}
+
+.team_img .overlay ul {
+    margin-top: 35px;
+}
+
+.team_img .overlay ul li {
+    margin-top: 20px;
+}
+
+.team_img .overlay ul a {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.team_img .overlay ul a:hover {
+    color: #fff;
+    background: #5bc5f4;
+    border-color: #5bc5f4;
+}
+
+.team_col:hover .team_text h3 {
+    color: #5bc5f4;
+}
+
+.team_col:hover {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================
+              Team CSS end
+===========================================*/
+
+/* =========================================
+              Testimonial CSS end
+===========================================*/
+#testimonial{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.test_row{
+    margin-top: 50px;
+}
+
+.test_col{
+    width: 48.96%;
+    float: left;
+    margin-right: 20px;
+}
+
+.test_col:nth-child(2){
+    margin-right: 0;
+}
+
+.test_text{
+    background: #f1f1f1;
+    padding: 20px;
+    margin-top: 36px;
+    position: relative;
+}
+
+.test_text::after{
+    position: absolute;
+    content: '';
+    top: -35px;
+    left: 50%;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid #f1f1f1;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+/* =========================================
+              Testimonial CSS end
+===========================================*/
+
+/* =========================================
+              Footer CSS end
+===========================================*/
+#footer{
+    width: 100%;
+    background: #353535;
+}
+
+.footer_top{
+    padding: 20px 0;
+}
+
+.footer_left{
+    width: 25%;
+    padding-right: 20px;
+    float: left;
+}
+
+.footer_left .footer_logo{
+    margin-bottom: 30px;
+}
+
+.footer_text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #f1f1f1;
+    line-height: 24px;
+}
+
+.footer_text p span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 36px;
+    display: block;
+    line-height: 24px;
+}
+
+.footer_left2{
+    width: 25%;
+    padding-right: 20px;
+    float: left;
+}
+
+.footer_left2 ul{
+    margin-bottom: 20px;
+}
+
+.footer_left2 ul li{
+    margin-bottom: 5px;
+}
+
+.footer_left2 ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #f1f1f1;
+    position: relative;
+    padding-left: 45px;
+    transition: all linear .3s;
+}
+
+.footer_left2 ul li a:hover{
+    color: #5bc5f4;
+}
+
+.footer_left2 h4{
+    margin-bottom: 43px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer_left2 ul li a i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    background: #5bc5f4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+}
+
+.footer_left3{
+    width: 20%;
+    padding-right: 20px;
+    float: left;
+}
+
+.footer_left3 ul{
+    width: 50%;
+    float: left;
+    margin-top: 29px;
+}
+
+.footer_left3 ul li{
+    margin-bottom: 26px;
+}
+
+.footer_left3 h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer_left3 ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.footer_last{
+    width: 30%;
+    float: left;
+}
+
+.footer_last h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 27px;
+}
+
+.footer_last ul li{
+    width: 29.86%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.footer_last ul li:nth-child(3),
+.footer_last ul li:last-child{
+    margin-right: 0;
+}
+
+.footer_last ul li img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.footer_bottom{
+    width: 100%;
+    padding: 16px 0;
+    background: #555;
+    text-align: center;
+}
+
+.footer_bottom p{
+    color: #f1f1f1;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer_bottom p a{
+    color: #5bc5f4;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer_left3 ul li a:hover{
+    color: #5bc5f4;
+}
+
+/* =========================================
+              Footer CSS end
+===========================================*/
